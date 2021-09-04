@@ -23,7 +23,7 @@ class Home extends Component {
               Resume
             </a>
           </div>
-          <div className="image-wrapper mt-4 me-5 mt-5 pt-5">
+          <div className="image-wrapper mt-4 me-5 mt-5 pt-5 mb-4">
             <img src={image} alt="female programmer" width="400" />
           </div>
         </div>

@@ -40,6 +40,15 @@
   box-shadow: none !important;
 }
 
+.page-title {
+  
+  span {
+    border-bottom: 5px solid $secondary-color;
+    padding-bottom: 0.25rem;
+  }
+  
+}
+
 #home {
 
   background-color: $background-color;

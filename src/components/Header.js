@@ -29,7 +29,6 @@ class Header extends Component {
                     to="home"
                     spy={true}
                     smooth={true}
-                    exact
                     activeClass="active"
                   >
                     Home

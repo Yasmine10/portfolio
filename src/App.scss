@@ -2,13 +2,31 @@
 
 .App {
   background-color: $background-color;
-  min-height: 100vh;
+  // min-height: 100vh;
+
+  .main-content {
+    margin-top: 4.5rem;
+  }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active {
+  color: $secondary-color !important;
 }
+
+.navbar {
+  top: 0;
+  background-color: $background-color !important;
+  position: absolute;
+
+  .nav-link {
+    text-transform: uppercase;
+  }
+}
+
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
 
 //@media (prefers-reduced-motion: no-preference) {
 //  .App-logo {

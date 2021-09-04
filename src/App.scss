@@ -10,10 +10,6 @@
   }
 }
 
-.active {
-  color: $secondary-color !important;
-}
-
 .navbar {
   top: 0;
   background-color: $background-color !important;
@@ -21,7 +17,18 @@
 
   .nav-link {
     text-transform: uppercase;
+    color: $primary-color !important;
+
+    &:hover,
+    &:active {
+      color: $secondary-color !important;
+      cursor: pointer;
+    }
   }
+}
+
+.active {
+  color: $secondary-color !important;
 }
 
 .btn {
@@ -41,16 +48,13 @@
 }
 
 .page-title {
-  
   span {
     border-bottom: 5px solid $secondary-color;
     padding-bottom: 0.25rem;
   }
-  
 }
 
 #home {
-
   background-color: $background-color;
   position: relative;
 
@@ -59,19 +63,16 @@
     animation: shift 7s infinite;
   }
 
-  
-
   image-wrapper {
     z-index: 2;
   }
-
 }
 
 #skills {
   background-color: $primary-color;
   color: $background-color;
 
-.clipping {
+  .clipping {
     height: 100%;
     width: 100%;
     background-color: $secondary-color;
@@ -79,26 +80,24 @@
     position: absolute;
     z-index: -1;
   }
-  
 }
 
 @keyframes shift {
-    0% {
-      color: $secondary-color;
-    }
-    25% {
-      color: $shift-color-1;
-    }
-    50% {
-      color: $shift-color-2;
-    }
-    75% {
-      color: $shift-color-3;
-    }
-    100% {
-      color: $secondary-color;
-    }
-  
+  0% {
+    color: $secondary-color;
+  }
+  25% {
+    color: $shift-color-1;
+  }
+  50% {
+    color: $shift-color-2;
+  }
+  75% {
+    color: $shift-color-3;
+  }
+  100% {
+    color: $secondary-color;
+  }
 }
 
 // .App-logo {

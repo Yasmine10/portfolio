@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-md pt-4 navbar-dark fixed-top">
+        <nav className="navbar navbar-expand-md pt-4 fixed-top">
           <div className="container">
             <button
               className="navbar-toggler"
@@ -29,7 +29,10 @@ class Header extends Component {
                     to="home"
                     spy={true}
                     smooth={true}
+                    duration={300}
+                    delay={0}
                     activeClass="active"
+                    offset={-70}
                   >
                     Home
                   </Link>
@@ -40,8 +43,10 @@ class Header extends Component {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    duration={500}
+                    duration={300}
+                    delay={0}
                     activeClass="active"
+                    offset={-50}
                   >
                     Skills
                   </Link>
@@ -52,8 +57,10 @@ class Header extends Component {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    duration={500}
+                    duration={300}
+                    delay={0}
                     activeClass="active"
+                    offset={-50}
                   >
                     Projects
                   </Link>
@@ -61,10 +68,11 @@ class Header extends Component {
                 <li className="nav-item ms-4">
                   <Link
                     className="nav-link"
-                    to="#contact"
+                    to="contact"
                     spy={true}
                     smooth={true}
-                    duration={500}
+                    duration={300}
+                    delay={0}
                     activeClass="active"
                   >
                     Contact

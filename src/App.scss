@@ -1,5 +1,9 @@
 @import "colors";
 
+.border-pink {
+  border-top: 0.5rem solid $secondary-color;
+}
+
 .App {
   background-color: $background-color;
   color: $primary-color;
@@ -19,16 +23,18 @@
     text-transform: uppercase;
     color: $primary-color !important;
 
-    &:hover,
-    &:active {
+    &:hover {
       color: $secondary-color !important;
       cursor: pointer;
     }
   }
 }
 
-.active {
-  color: $secondary-color !important;
+#header {
+  .active {
+    color: $secondary-color !important;
+    cursor: pointer;
+  }
 }
 
 .btn {
@@ -56,11 +62,11 @@
 
 #home {
   background-color: $background-color;
-  position: relative;
+  // position: relative;
 
   .name {
     color: $secondary-color;
-    animation: shift 7s infinite;
+    animation: changeColors 7s infinite;
   }
 
   image-wrapper {
@@ -82,7 +88,14 @@
   }
 }
 
-@keyframes shift {
+#footer {
+  .copyright-text {
+    margin-bottom: 0;
+    background-color: $dark-color;
+  }
+}
+
+@keyframes changeColors {
   0% {
     color: $secondary-color;
   }

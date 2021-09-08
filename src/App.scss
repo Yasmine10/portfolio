@@ -1,7 +1,7 @@
 @import "colors";
 
 .border-pink {
-  border-top: 0.5rem solid $secondary-color;
+  border-top: 0.4rem solid $secondary-color;
 }
 
 .App {
@@ -52,7 +52,7 @@
 
 .page-title {
   span {
-    border-bottom: 5px solid $secondary-color;
+    border-bottom: 0.15rem solid $secondary-color;
     padding-bottom: 0.25rem;
   }
 }
@@ -85,6 +85,23 @@
   }
 }
 
+#project-card {
+  .project-title {
+    color: $secondary-color;
+  }
+
+  .list {
+    padding-left: 0;
+  }
+
+  .list-item-text {
+    color: $light-grey-color;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: lighter;
+  }
+}
+
 // .form-control {
 //   max-width: 75%;
 // }
@@ -93,14 +110,6 @@
   width: 270px;
   margin-left: 1rem;
   margin-right: 1rem;
-  // X-Small devices (portrait phones, less than 576px)
-  // No media query for `xs` since this is the default in Bootstrap
-
-  // Small devices (landscape phones, 576px and up)
-  // @media (min-width: 576px) {
-  //   width: 300px !important;
-  //   margin-right: 0 !important;
-  // }
 
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {

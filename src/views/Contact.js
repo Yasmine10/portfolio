@@ -4,8 +4,8 @@ import Image from "../assets/images/female_reading_mail.png";
 class Contact extends Component {
   render() {
     return (
-      <div id="contact" className="border-pink">
-        <div className="container py-5">
+      <div id="contact" className="border-pink my-5">
+        <div className="container py-5 mt-5">
           <div className="d-md-flex align-items-md-center">
             <div className="flex-md-shrink-0 text-center text-md-start mb-5 mb-md-0">
               <img

@@ -9,7 +9,7 @@
   color: $primary-color;
 
   .main-content {
-    margin-top: 4.5rem;
+    // margin-top: 4.5rem;
   }
 }
 
@@ -53,6 +53,7 @@
   color: $primary-color !important;
   padding: 0.375rem 1.75rem !important;
   box-shadow: none;
+  text-transform: uppercase;
 
   &:focus,
   &:active {
@@ -71,15 +72,10 @@
 
 #home {
   background-color: $background-color;
-  // position: relative;
 
   .name {
     color: $secondary-color;
     animation: changeColors 7s infinite;
-  }
-
-  image-wrapper {
-    z-index: 2;
   }
 }
 
@@ -126,6 +122,32 @@
 // .form-control {
 //   max-width: 75%;
 // }
+
+.home-image {
+  width: 100%;
+  margin-bottom: 1rem !important;
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    width: 320px !important;
+    // margin-right: 2rem !important;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    width: 450px !important;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    width: 550px !important;
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    width: 600px;
+  }
+}
 
 .project-image {
   width: 100%;

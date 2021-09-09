@@ -21,18 +21,30 @@
   .nav-link {
     text-transform: uppercase;
     color: $primary-color !important;
+    border-bottom: 0.2rem solid $background-color;
 
     &:hover {
-      color: $secondary-color !important;
+      // color: $secondary-color !important;
       cursor: pointer;
+
+      span {
+        border-bottom: 0.2rem solid $secondary-color;
+        padding-bottom: 0.5rem;
+      }
     }
   }
 }
 
 #header {
   .active {
-    color: $secondary-color !important;
+    // color: $secondary-color !important;
+
     cursor: pointer;
+
+    span {
+      border-bottom: 0.2rem solid $secondary-color;
+      padding-bottom: 0.5rem;
+    }
   }
 }
 
@@ -86,8 +98,13 @@
 }
 
 #project-card {
+  img {
+    outline: 0.1rem solid $primary-color;
+  }
+
   .project-title {
     color: $secondary-color;
+    font-weight: normal;
   }
 
   .list {
@@ -99,6 +116,10 @@
     text-transform: uppercase;
     list-style: none;
     font-weight: lighter;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
   }
 }
 
@@ -106,10 +127,34 @@
 //   max-width: 75%;
 // }
 
+.project-image {
+  width: 100%;
+  margin-bottom: 1rem !important;
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    width: 320px !important;
+    margin-right: 2rem !important;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    width: 450px !important;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    width: 550px !important;
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    width: 600px;
+  }
+}
+
 .contact-image {
-  width: 270px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 100%;
 
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {

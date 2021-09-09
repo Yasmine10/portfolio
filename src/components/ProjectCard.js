@@ -10,21 +10,23 @@ function ProjectCard(props) {
   ));
 
   return (
-    <div id="project-card" className="d-flex align-items-center mb-5">
-      <div className="flex-shrink-0 me-5">
+    <div
+      id="project-card"
+      className="d-md-flex align-items-md-center mt-5 d-block"
+    >
+      <div className="flex-shrink-md-0 me-lg-5">
         <img
           src={props.project.imageUrl}
           alt={props.project.imageAlt}
           className="project-image"
-          width="500"
         />
       </div>
-      <div className="flex-grow-1">
+      <div className="flex-grow-md-1">
         <h5 className="project-title text-uppercase">
           <span>{props.project.name}</span>
         </h5>
         <p className="fw-light">{props.project.description}</p>
-        <ul className="list d-flex">{listItems}</ul>
+        <ul className="list d-flex flex-row flex-wrap">{listItems}</ul>
         <div className="">
           <a
             href={props.project.liveLink}

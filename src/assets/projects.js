@@ -4,7 +4,7 @@ const projects = [
   {
     name: "Portfolio project",
     description:
-      "This project has been made by me from design till putting the website online on a web hosting service",
+      "This project has been made by me from design till placing the website online on a web hosting service",
     imageUrl: `${imagePortfolio}`,
     imageAlt: "Portfolio project desktop",
     languages: ["HTML", "CSS", "Bootstrap", "ReactJs"],
@@ -14,7 +14,7 @@ const projects = [
   {
     name: "Portfolio",
     description:
-      "This project has been made by me from design till putting the website online on a web hosting service",
+      "This project has been made by me from design till placing the website online on a web hosting service",
     imageUrl: `${imagePortfolio}`,
     imageAlt: "Portfolio project desktop",
     languages: ["HTML", "CSS", "Bootstrap", "ReactJs"],

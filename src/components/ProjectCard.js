@@ -5,8 +5,10 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectCard(props) {
   const languages = props.project.languages;
-  const listItems = languages.map((language) => (
-    <li className="list-item-text me-4">{language}</li>
+  const listItems = languages.map((language, index) => (
+    <li key={index} className="list-item-text me-4">
+      {language}
+    </li>
   ));
 
   return (

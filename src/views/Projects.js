@@ -11,8 +11,8 @@ class Projects extends Component {
           <h4 className="page-title pt-5">
             <span>Projects</span>
           </h4>
-          {projects.map((project) => (
-            <ProjectCard project={project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
           ))}
         </div>
       </div>

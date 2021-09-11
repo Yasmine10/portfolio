@@ -9,8 +9,8 @@ import Projects from "./views/Projects";
 export default function App() {
   return (
     <div className="App">
-      <Header />
       <div className="main-content">
+        <Header />
         <Home />
         <Skills />
         <Projects />

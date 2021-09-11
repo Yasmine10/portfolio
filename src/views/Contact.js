@@ -4,14 +4,14 @@ import Image from "../assets/images/female_reading_mail.png";
 class Contact extends Component {
   render() {
     return (
-      <div id="contact" className="border-pink my-5 px-3">
-        <div className="container py-md-5 py-3 mt-5">
+      <div id="contact" className="border-pink py-md-5 px-3">
+        <div className="container py-xl-5 pb-3">
           <div className="d-md-flex align-items-md-center">
             <div className="flex-md-shrink-0 text-center text-md-start mb-5 mb-md-0">
               <img
                 src={Image}
                 alt="female reading mail"
-                className="contact-image me-xl-5"
+                className="contact-image me-xl-5 d-none d-md-block"
               />
             </div>
             <div className="flex-md-grow-1 ms-lg-5 ms-md-3 p-md-0">

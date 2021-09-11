@@ -12,7 +12,7 @@ function ProjectCard(props) {
   return (
     <div
       id="project-card"
-      className="d-md-flex align-items-md-center mt-5 d-block"
+      className="d-md-flex align-items-md-center pt-5 mt-3 d-block"
     >
       <div className="flex-shrink-md-0 me-lg-5">
         <img
@@ -22,7 +22,7 @@ function ProjectCard(props) {
         />
       </div>
       <div className="flex-grow-md-1">
-        <h5 className="project-title text-uppercase">
+        <h5 className="project-title text-uppercase pt-3">
           <span>{props.project.name}</span>
         </h5>
         <p className="fw-light">{props.project.description}</p>

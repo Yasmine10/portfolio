@@ -14,8 +14,8 @@ class Skills extends Component {
   render() {
     return (
       <div id="skills" className="pb-4">
-        <div className="container py-3">
-          <h4 className="page-title text-center mb-5 pt-5">
+        <div className="container pb-3">
+          <h4 className="page-title text-center mb-5 pt-3">
             <span>Skills</span>
           </h4>
           <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">

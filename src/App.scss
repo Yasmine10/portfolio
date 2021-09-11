@@ -5,7 +5,7 @@
 }
 
 .App {
-  background-color: $background-color;
+  // background-color: $background-color;
   color: $primary-color;
 
   .main-content {
@@ -71,26 +71,45 @@
 }
 
 #home {
-  background-color: $background-color;
+  width: 100%;
+  height: auto;
+  position: relative;
+  // background-color: $primary-color;
+
+  .home-wrapper {
+    // display: flex;
+    // position: relative;
+    z-index: 1;
+  }
 
   .name {
     color: $secondary-color;
-    animation: changeColors 7s infinite;
+    animation: changeColors 15s infinite;
   }
+}
+
+#home::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $background-color;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 }
 
 #skills {
   background-color: $primary-color;
   color: $background-color;
+}
 
-  .clipping {
-    height: 100%;
-    width: 100%;
-    background-color: $secondary-color;
-    clip-path: polygon(100% 0, 0 0, 0 25%);
-    position: absolute;
-    z-index: -1;
-  }
+#projects {
+  background-color: $background-color;
+  padding-bottom: 4rem !important;
 }
 
 #project-card {
@@ -119,9 +138,10 @@
   }
 }
 
-// .form-control {
-//   max-width: 75%;
-// }
+#contact {
+  background-color: $background-color;
+  padding-bottom: 2.5rem !important;
+}
 
 .home-image {
   width: 100%;
@@ -130,22 +150,27 @@
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
     width: 320px !important;
-    // margin-right: 2rem !important;
+    margin-left: 2rem !important;
+    margin-bottom: 3rem !important;
   }
 
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
     width: 450px !important;
+    margin-bottom: 4.5rem !important;
   }
 
   // X-Large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
-    width: 550px !important;
+    width: 450px !important;
+    margin-bottom: 5rem !important;
   }
 
   // XX-Large devices (larger desktops, 1400px and up)
   @media (min-width: 1400px) {
     width: 600px;
+    margin-top: 2rem;
+    margin-bottom: 5.5rem !important;
   }
 }
 
@@ -201,6 +226,8 @@
 }
 
 #footer {
+  background-color: $background-color;
+
   .copyright-text {
     margin-bottom: 0;
     background-color: $dark-color;

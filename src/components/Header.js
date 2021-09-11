@@ -4,11 +4,11 @@ import { Link } from "react-scroll";
 class Header extends Component {
   render() {
     return (
-      <div>
-        <nav className="navbar navbar-expand-md pt-4 fixed-top">
+      <div id="header" className="py-4 my-0">
+        <nav className="navbar navbar-expand-md pt-4 pb-3 fixed-top navbar-dark">
           <div className="container">
             <button
-              className="navbar-toggler"
+              className="navbar-toggler ms-auto"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -29,53 +29,54 @@ class Header extends Component {
                     to="home"
                     spy={true}
                     smooth={true}
-                    duration={300}
+                    duration={200}
                     delay={0}
                     activeClass="active"
-                    offset={-70}
+                    offset={-100}
                   >
-                    Home
+                    <span>Home</span>
                   </Link>
                 </li>
-                <li className="nav-item ms-4">
+                <li className="nav-item ms-md-4">
                   <Link
                     className="nav-link"
                     to="skills"
                     spy={true}
                     smooth={true}
-                    duration={300}
+                    duration={200}
                     delay={0}
                     activeClass="active"
-                    offset={-50}
+                    offset={-100}
                   >
-                    Skills
+                    <span>Skills</span>
                   </Link>
                 </li>
-                <li className="nav-item ms-4">
+                <li className="nav-item ms-md-4">
                   <Link
                     className="nav-link"
                     to="projects"
                     spy={true}
                     smooth={true}
-                    duration={300}
+                    duration={200}
                     delay={0}
                     activeClass="active"
                     offset={-50}
                   >
-                    Projects
+                    <span>Projects</span>
                   </Link>
                 </li>
-                <li className="nav-item ms-4">
+                <li className="nav-item ms-md-4">
                   <Link
                     className="nav-link"
                     to="contact"
                     spy={true}
                     smooth={true}
-                    duration={300}
+                    duration={200}
                     delay={0}
                     activeClass="active"
+                    offset={-50}
                   >
-                    Contact
+                    <span>Contact</span>
                   </Link>
                 </li>
               </ul>

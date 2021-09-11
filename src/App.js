@@ -9,13 +9,11 @@ import Projects from "./views/Projects";
 export default function App() {
   return (
     <div className="App">
-      <div className="main-content">
-        <Header />
-        <Home />
-        <Skills />
-        <Projects />
-        <Contact />
-      </div>
+      <Header />
+      <Home />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );

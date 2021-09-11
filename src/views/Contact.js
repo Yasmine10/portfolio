@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Image from "../assets/images/female_receiving_mail.svg";
+import Image from "../assets/images/female_sending_letter.svg";
 
 class Contact extends Component {
   render() {
     return (
-      <div id="contact" className="contact border-pink py-md-5 px-3">
+      <div id="contact" className="border-pink py-md-5 px-3">
         <div className="container py-xl-5 pb-3">
           <div className="d-md-flex align-items-md-center">
             <div className="flex-md-shrink-0 text-center text-md-start mb-5 mb-md-0">
@@ -22,7 +22,7 @@ class Contact extends Component {
                 <div className="mb-3">
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control border-dark"
                     id="fullname"
                     placeholder="Full name"
                   />
@@ -30,14 +30,14 @@ class Contact extends Component {
                 <div className="mb-3">
                   <input
                     type="email"
-                    className="form-control"
+                    className="form-control border-dark"
                     id="email"
                     placeholder="E-mail"
                   />
                 </div>
                 <div className="mb-3">
                   <textarea
-                    className="form-control"
+                    className="form-control border-dark"
                     id="message"
                     rows="6"
                     placeholder="Message"

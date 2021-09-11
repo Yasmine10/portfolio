@@ -1,20 +1,10 @@
-import ImagePortfolio from "../assets/images/Web 1920 – 2.png";
+import ImagePortfolio from "../assets/images/portfolio_project.svg";
 
 const projects = [
   {
     name: "Portfolio project",
     description:
-      "This project has been made by me from design till placing the website online on a web hosting service",
-    imageUrl: `${ImagePortfolio}`,
-    imageAlt: "Portfolio project desktop",
-    languages: ["HTML", "CSS", "Bootstrap", "ReactJs"],
-    github: "https://github.com/Yasmine10/portfolio",
-    liveLink: "yasminedewolf.be",
-  },
-  {
-    name: "Portfolio",
-    description:
-      "This project has been made by me from design till placing the website online on a web hosting service",
+      "This is a project made to show my skills and display the projects that i have created while getting my bachelor degree.",
     imageUrl: `${ImagePortfolio}`,
     imageAlt: "Portfolio project desktop",
     languages: ["HTML", "CSS", "Bootstrap", "ReactJs"],

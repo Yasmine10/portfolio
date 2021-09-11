@@ -13,8 +13,8 @@ import {
 class Skills extends Component {
   render() {
     return (
-      <div id="skills" className="pb-4">
-        <div className="container pb-3">
+      <div id="skills" className="pb-5">
+        <div className="container pb-4">
           <h4 className="page-title text-center mb-5 pt-3">
             <span>Skills</span>
           </h4>

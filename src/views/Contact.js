@@ -1,15 +1,36 @@
 import React from "react";
 import Image from "../assets/images/female_sending_letter.svg";
 import { useForm } from "react-hook-form";
+import * as emailjs from "emailjs-com";
+
+require("dotenv").config();
 
 function Contact() {
+  const serviceId = "service_7dxh8wv";
+  const templateId = "template_dlj1cmc";
+  const userId = "user_76gRUHgTcOql8iQ30wEXV";
+
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
-  const onSubmit = (data) => {
+
+  const onSubmit = (data, e) => {
+    e.preventDefault();
     console.log(data);
+
+    emailjs.sendForm(serviceId, templateId, e.target, userId).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+
+    reset(register);
   };
 
   return (
@@ -30,6 +51,7 @@ function Contact() {
               </h4>
               <div className="mb-3">
                 <input
+                  name="fullname"
                   type="text"
                   className={`form-control border-dark ${
                     errors.fullname ? "is-invalid" : ""
@@ -47,6 +69,7 @@ function Contact() {
               </div>
               <div className="mb-3">
                 <input
+                  name="email"
                   className={`form-control border-dark ${
                     errors.email ? "is-invalid" : ""
                   }`}
@@ -66,6 +89,7 @@ function Contact() {
               </div>
               <div className="mb-3">
                 <textarea
+                  name="message"
                   className={`form-control border-dark ${
                     errors.message ? "is-invalid" : ""
                   }`}
@@ -79,11 +103,34 @@ function Contact() {
                 </div>
               </div>
               <div className="text-center text-md-start">
-                <button className="btn" type="submit">
-                  Send
-                </button>
+                <button className="btn">Send</button>
               </div>
             </form>
+            <div
+              class="alert alert-success alert-dismissible fade show mt-4"
+              role="alert"
+            >
+              <strong>Message send successfully!</strong> I will get back to you
+              as soon as possible.
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible fade show mt-4"
+              role="alert"
+            >
+              <strong>Something went wrong, try again later!</strong>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
         </div>
       </div>

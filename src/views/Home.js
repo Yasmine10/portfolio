@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Image from "../assets/images/female_programmer.png";
+import Image from "../assets/images/female_programmer.svg";
+import Resume from "../assets/cv_yasmine_de_wolf.pdf";
 
 class Home extends Component {
   render() {
@@ -14,7 +15,7 @@ class Home extends Component {
               and ux friendly websites.
             </p>
             <a
-              href="https://www.dropbox.com/s/6zl7o8a4er89m7w/cv_yasmine_de_wolf.pdf?dl=0"
+              href={Resume}
               target="_blank"
               rel="noreferrer"
               className=" btn mt-4 mb-5"

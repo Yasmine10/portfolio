@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Image from "../assets/images/female_reading_mail.png";
+import Image from "../assets/images/female_receiving_mail.svg";
 
 class Contact extends Component {
   render() {
     return (
-      <div id="contact" className="border-pink py-md-5 px-3">
+      <div id="contact" className="contact border-pink py-md-5 px-3">
         <div className="container py-xl-5 pb-3">
           <div className="d-md-flex align-items-md-center">
             <div className="flex-md-shrink-0 text-center text-md-start mb-5 mb-md-0">

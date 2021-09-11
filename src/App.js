@@ -1,14 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./views/Home";
+import Skills from "./views/Skills";
+import Contact from "./views/Contact";
+import Projects from "./views/Projects";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <Header />
+      <Home />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
-
-export default App;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "../assets/images/female_sending_letter.svg";
 import { useForm } from "react-hook-form";
 import * as emailjs from "emailjs-com";
@@ -9,6 +9,52 @@ function Contact() {
   const serviceId = "service_7dxh8wv";
   const templateId = "template_dlj1cmc";
   const userId = "user_76gRUHgTcOql8iQ30wEXV";
+
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+  const [showErrorAlert, setShowErrorAlert] = useState(false);
+
+  const SuccessAlert = (props) => {
+    useEffect(() => {
+      const timeId = setTimeout(() => {
+        setShowSuccessAlert(false);
+      }, 30000);
+
+      return () => {
+        clearTimeout(timeId);
+      };
+    });
+
+    return (
+      <div className="mt-4">
+        <p>
+          <strong>
+            Thank you for your message! I will get back to you as soon as
+            possible!
+          </strong>
+        </p>
+      </div>
+    );
+  };
+
+  const ErrorAlert = (props) => {
+    useEffect(() => {
+      const timeId = setTimeout(() => {
+        setShowErrorAlert(false);
+      }, 30000);
+
+      return () => {
+        clearTimeout(timeId);
+      };
+    });
+
+    return (
+      <div className="mt-4">
+        <p>
+          <strong>Something went wrong, try again later.</strong>
+        </p>
+      </div>
+    );
+  };
 
   const {
     register,
@@ -24,9 +70,11 @@ function Contact() {
     emailjs.sendForm(serviceId, templateId, e.target, userId).then(
       (result) => {
         console.log(result.text);
+        return setShowSuccessAlert(true);
       },
       (error) => {
         console.log(error.text);
+        return setShowErrorAlert(true);
       }
     );
 
@@ -106,31 +154,8 @@ function Contact() {
                 <button className="btn">Send</button>
               </div>
             </form>
-            <div
-              class="alert alert-success alert-dismissible fade show mt-4"
-              role="alert"
-            >
-              <strong>Message send successfully!</strong> I will get back to you
-              as soon as possible.
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="alert"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div
-              class="alert alert-danger alert-dismissible fade show mt-4"
-              role="alert"
-            >
-              <strong>Something went wrong, try again later!</strong>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="alert"
-                aria-label="Close"
-              ></button>
-            </div>
+            {showSuccessAlert ? <SuccessAlert /> : null}
+            {showErrorAlert ? <ErrorAlert /> : null}
           </div>
         </div>
       </div>

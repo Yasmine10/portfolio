@@ -3,17 +3,15 @@ import Image from "../assets/images/female_sending_letter.svg";
 import { useForm } from "react-hook-form";
 import * as emailjs from "emailjs-com";
 
-require("dotenv").config();
-
 function Contact() {
-  const serviceId = "service_7dxh8wv";
-  const templateId = "template_dlj1cmc";
-  const userId = "user_76gRUHgTcOql8iQ30wEXV";
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const userId = process.env.REACT_APP_EMAILJS_USER_ID;
 
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const [showErrorAlert, setShowErrorAlert] = useState(false);
 
-  const SuccessAlert = (props) => {
+  const SuccessAlert = () => {
     useEffect(() => {
       const timeId = setTimeout(() => {
         setShowSuccessAlert(false);
@@ -36,7 +34,7 @@ function Contact() {
     );
   };
 
-  const ErrorAlert = (props) => {
+  const ErrorAlert = () => {
     useEffect(() => {
       const timeId = setTimeout(() => {
         setShowErrorAlert(false);

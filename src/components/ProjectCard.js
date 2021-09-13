@@ -5,8 +5,10 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectCard(props) {
   const languages = props.project.languages;
-  const listItems = languages.map((language) => (
-    <li className="list-item-text me-4">{language}</li>
+  const listItems = languages.map((language, index) => (
+    <li key={index} className="list-item-text me-4">
+      {language}
+    </li>
   ));
 
   return (
@@ -27,10 +29,10 @@ function ProjectCard(props) {
         </h5>
         <p className="fw-light">{props.project.description}</p>
         <ul className="list d-flex flex-row flex-wrap">{listItems}</ul>
-        <div className="">
+        <div className="project-card-icons">
           <a
             href={props.project.liveLink}
-            className="text-white me-3"
+            className=" me-3"
             target="_blank"
             rel="noreferrer"
           >
@@ -41,7 +43,7 @@ function ProjectCard(props) {
           </a>
           <a
             href={props.project.github}
-            className="text-white"
+            className=""
             target="_blank"
             rel="noreferrer"
           >

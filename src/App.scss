@@ -24,6 +24,10 @@
   box-shadow: none;
   text-transform: uppercase;
 
+  &:hover {
+    transform: scale(1.1);
+  }
+
   &:focus,
   &:active {
     box-shadow: none;
@@ -97,26 +101,27 @@
 
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
-      width: 350px !important;
+      width: 250px !important;
       margin-left: 2rem !important;
       margin-bottom: 3rem !important;
+      margin-top: 2rem !important;
     }
 
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-      width: 450px !important;
+      width: 300px !important;
       margin-bottom: 4.5rem !important;
     }
 
     // X-Large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
-      width: 550px !important;
+      width: 400px !important;
       margin-bottom: 5rem !important;
     }
 
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {
-      width: 600px !important;
+      width: 500px !important;
       margin-top: 4rem;
       margin-bottom: 4rem !important;
     }
@@ -173,6 +178,16 @@
     font-weight: normal;
   }
 
+  .project-card-icons {
+    a {
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
   .list {
     padding-left: 0;
   }
@@ -201,23 +216,31 @@
 
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
-      width: 350px !important;
+      width: 250px !important;
       margin-right: 1.5rem !important;
     }
 
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-      width: 450px !important;
+      width: 300px !important;
     }
 
     // X-Large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
-      width: 550px !important;
+      width: 400px !important;
     }
 
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {
-      width: 600px !important;
+      width: 500px !important;
+    }
+  }
+
+  .is-invalid {
+    color: $red;
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
     }
   }
 }

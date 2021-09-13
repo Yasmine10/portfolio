@@ -5,9 +5,9 @@ import Resume from "../assets/cv_yasmine_de_wolf.pdf";
 class Home extends Component {
   render() {
     return (
-      <div id="home" className="py-3 px-3">
-        <div className="container d-md-flex d-block justify-content-md-between align-items-md-center py-md-1 pt-3">
-          <div className="flex-grow-1 text-center text-md-start pb-4">
+      <div id="home" className="mt-2 pt-5 pb-4 px-3">
+        <div className="container d-md-flex d-block justify-content-md-evenly align-items-md-center py-md-3 py-xl-3 pt-3">
+          <div className="flex-grow-0 text-center text-md-start py-4 ">
             <h4 className="fw-normal">Hi, I'm</h4>
             <h1 className="name mb-4">Yasmine De Wolf</h1>
             <p className="fw-light">
@@ -24,7 +24,7 @@ class Home extends Component {
               Resume
             </a>
           </div>
-          <div className="flex-shrink-0 d-none d-md-block pb-4 pb-md-5">
+          <div className="flex-shrink-0 d-none d-md-block pb-4 pb-md-5 ps-1">
             <img className="home-image" src={Image} alt="female programmer" />
           </div>
         </div>

@@ -58,25 +58,24 @@ function Contact() {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm();
 
   const onSubmit = (data, e) => {
     e.preventDefault();
-    console.log(data);
+    console.log(register);
 
     emailjs.sendForm(serviceId, templateId, e.target, userId).then(
       (result) => {
         console.log(result.text);
+        e.target.reset();
         return setShowSuccessAlert(true);
       },
       (error) => {
         console.log(error.text);
+        e.target.reset();
         return setShowErrorAlert(true);
       }
     );
-
-    reset(register);
   };
 
   return (

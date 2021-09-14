@@ -61,9 +61,11 @@ function Contact() {
     reset,
   } = useForm();
 
-  const onSubmit = (data, e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
-    console.log(data);
+
+    setShowSuccessAlert(false);
+    setShowErrorAlert(false);
 
     emailjs.sendForm(serviceId, templateId, e.target, userId).then(
       (result) => {

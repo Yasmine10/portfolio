@@ -25,10 +25,7 @@ function Contact() {
     return (
       <div className="mt-4">
         <p>
-          <strong>
-            Thank you for your message! I will get back to you as soon as
-            possible!
-          </strong>
+          <strong>Thank you for your message!</strong>
         </p>
       </div>
     );

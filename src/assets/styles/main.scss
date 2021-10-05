@@ -95,6 +95,12 @@
     animation: change-colors-name 20s infinite;
   }
 
+  p {
+    font-size: 1.25em;
+    line-height: 1.7em;
+    width: 85%;
+  }
+
   .home-image {
     width: 100%;
     margin-bottom: 1rem !important;
@@ -151,25 +157,8 @@
     width: 100%;
     margin-bottom: 1rem !important;
 
-    // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
-      width: 320px !important;
       margin-right: 2rem !important;
-    }
-
-    // Large devices (desktops, 992px and up)
-    @media (min-width: 992px) {
-      width: 450px !important;
-    }
-
-    // X-Large devices (large desktops, 1200px and up)
-    @media (min-width: 1200px) {
-      width: 550px !important;
-    }
-
-    // XX-Large devices (larger desktops, 1400px and up)
-    @media (min-width: 1400px) {
-      width: 600px !important;
     }
   }
 
@@ -208,6 +197,18 @@
 
     li {
       margin-left: 1rem;
+
+      .description-alineas p {
+        -ms-word-break: break-all;
+        word-break: break-all;
+   
+        /* Non standard for WebKit */
+        word-break: break-word;
+   
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+      }
     }
   }
 

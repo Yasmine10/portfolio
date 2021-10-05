@@ -51,7 +51,8 @@ const projects = [
     ],
     languages: ["HTML", "CSS", "Javascript", "ReactJS", "SCSS"],
     github: "https://github.com/Yasmine10/github-user-search-app",
-    liveLink: "https://github-user-search-app-10.herokuapp.com/"
+    liveLink: "https://github-user-search-app-10.herokuapp.com/",
+    loadingTime: true
   },
   {
     name: "Sunnyside agency landing page",
@@ -68,6 +69,7 @@ const projects = [
     languages: ["HTML", "CSS", "Javascript", "ReactJS", "SCSS"],
     github: "https://github.com/Yasmine10/sunnyside-agency-landing-page",
     liveLink: "https://sunnyside-challenge.herokuapp.com/",
+    loadingTime: true
   },
   {
     name: "Paramotor terrain notification applications (Internship projects)",
@@ -155,6 +157,7 @@ const projects = [
     languages: ["HTML", "SCSS", "Angular CLI", "TypeScript", "Bootstrap", "PrimeNG"],
     github: "",
     liveLink: "",
+    loadingTime: false
   },
   {
     name: "Portfolio",
@@ -171,6 +174,7 @@ const projects = [
     languages: ["HTML", "SCSS", "Bootstrap", "ReactJs"],
     github: "https://github.com/Yasmine10/portfolio",
     liveLink: "https://yasminedewolf.be",
+    loadingTime: false
   },
 ];
 

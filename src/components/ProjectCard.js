@@ -40,6 +40,7 @@ function ProjectCard(props) {
         <ul className="description-list mb-4">
           {descriptionItems}
         </ul>
+        {props.project.loadingTime && (<p className="text-small mt-4 note-text"><strong>Note: It might take a minute to load the live site.</strong></p>)}
         {/* <p className="fw-light">{props.project.description}</p> */}
         <ul className="languages-list d-flex flex-row flex-wrap">{listItems}</ul>
         <div className="project-card-icons">

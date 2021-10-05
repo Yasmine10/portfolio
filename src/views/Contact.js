@@ -66,11 +66,9 @@ function Contact() {
 
     emailjs.sendForm(serviceId, templateId, e.target, userId).then(
       (result) => {
-        console.log(result.text);
         return setShowSuccessAlert(true);
       },
       (error) => {
-        console.log(error.text);
         return setShowErrorAlert(true);
       }
     );

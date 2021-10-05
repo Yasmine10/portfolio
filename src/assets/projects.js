@@ -1,56 +1,73 @@
-import ImagePortfolioHome from "../assets/images/portfolio/portfolio_home.svg";
-import ImagePortfolioSkills from "../assets/images/portfolio/portfolio_skills.svg";
-import ImagePortfolioProjects from "../assets/images/portfolio/portfolio_projects.svg";
-import ImagePortfolioContact from "../assets/images/portfolio/portfolio_contact.svg";
+import ImageFODStageClientLogin from "../assets/images/FOD_stage/FOD_stage_client_login.png";
+import ImageFODStageClientDashboard from "../assets/images/FOD_stage/FOD_stage_client_dashboard.png";
+import ImageFODStageClientCreateContactInfo from "../assets/images/FOD_stage/FOD_stage_client_new_notification_contact_info.png";
+import ImageFODStageClientCreateOptionsTerrain from "../assets/images/FOD_stage/FOD_stage_client_new_notification_options_terrain.png";
+import ImageFODStageClientCreateDateLocation from "../assets/images/FOD_stage/FOD_stage_client_new_notification_date_location.png";
+import ImageFODStageClientCreateTerrainOwner from "../assets/images/FOD_stage/FOD_stage_client_new_notification_terrain_owner.png";
+import ImageFODStageClientCreateOverview from "../assets/images/FOD_stage/FOD_stage_client_new_notification_overview.png";
+import ImageFODStageClientDetailsInfo from "../assets/images/FOD_stage/FOD_stage_client_notification_details_info.png";
+import ImageFODStageClientDetailsLocation from "../assets/images/FOD_stage/FOD_stage_client_notification_details_location.png";
+import ImageFODStageClientDetailsTerrainOwner from "../assets/images/FOD_stage/FOD_stage_client_notification_details_terrain_owner.png";
+import ImageFODStageClientDetailsDocuments from "../assets/images/FOD_stage/FOD_stage_client_notification_details_documents.png";
 
-import ImageFODStageClientLogin from "../assets/images/FOD_stage/FOD_stage_client_login.svg";
-import ImageFODStageClientDashboard from "../assets/images/FOD_stage/FOD_stage_client_dashboard.svg";
-import ImageFODStageClientCreateContactInfo from "../assets/images/FOD_stage/FOD_stage_client_new_notification_contact_info.svg";
-import ImageFODStageClientCreateOptionsTerrain from "../assets/images/FOD_stage/FOD_stage_client_new_notification_options_terrain.svg";
-import ImageFODStageClientCreateDateLocation from "../assets/images/FOD_stage/FOD_stage_client_new_notification_date_location.svg";
-import ImageFODStageClientCreateTerrainOwner from "../assets/images/FOD_stage/FOD_stage_client_new_notification_terrain_owner.svg";
-import ImageFODStageClientCreateOverview from "../assets/images/FOD_stage/FOD_stage_client_new_notification_overview.svg";
-import ImageFODStageClientDetailsInfo from "../assets/images/FOD_stage/FOD_stage_client_notification_details_info.svg";
-import ImageFODStageClientDetailsLocation from "../assets/images/FOD_stage/FOD_stage_client_notification_details_location.svg";
-import ImageFODStageClientDetailsTerrainOwner from "../assets/images/FOD_stage/FOD_stage_client_notification_details_terrain_owner.svg";
-import ImageFODStageClientDetailsDocuments from "../assets/images/FOD_stage/FOD_stage_client_notification_details_documents.svg";
+import ImageFODStageBusinessLogin from "../assets/images/FOD_stage/FOD_stage_business_login.png";
+import ImageFODStageBusinessLogin2 from "../assets/images/FOD_stage/FOD_stage_business_login_2.png";
+import ImageFODStageBusinessMap from "../assets/images/FOD_stage/FOD_stage_business_map.png";
+import ImageFODStageBusinessDetailsInfo from "../assets/images/FOD_stage/FOD_stage_business_notification_details_info.png";
+import ImageFODStageBusinessDetailsUser from "../assets/images/FOD_stage/FOD_stage_business_notification_details_user.png";
+import ImageFODStageBusinessDetailsLogbook from "../assets/images/FOD_stage/FOD_stage_business_notification_details_logbook.png";
+import ImageFODStageBusinessList from "../assets/images/FOD_stage/FOD_stage_business_list.png";
 
-import ImageFODStageBusinessLogin from "../assets/images/FOD_stage/FOD_stage_business_login.svg";
-import ImageFODStageBusinessLogin2 from "../assets/images/FOD_stage/FOD_stage_business_login_2.svg";
-import ImageFODStageBusinessMap from "../assets/images/FOD_stage/FOD_stage_business_map.svg";
-import ImageFODStageBusinessDetailsInfo from "../assets/images/FOD_stage/FOD_stage_business_notification_details_info.svg";
-import ImageFODStageBusinessDetailsUser from "../assets/images/FOD_stage/FOD_stage_business_notification_details_user.svg";
-import ImageFODStageBusinessDetailsLogbook from "../assets/images/FOD_stage/FOD_stage_business_notification_details_logbook.svg";
-import ImageFODStageBusinessList from "../assets/images/FOD_stage/FOD_stage_business_list.svg";
+import ImagePortfolioDesktop from "../assets/images/portfolio/portfolio_desktop.png";
+import ImageSunnysideAgencyLandingPageDesktop from "../assets/images/sunnyside_agency_landing_page/sunnyside_agency_landing_page_desktop.png";
+import ImageGithubUserSearchAppDesktop from "../assets/images/github_user_search_app/github_user_search_app_desktop.png";
 
 const projects = [
+  // {
+  //   name: "Memory game",
+  //   description: [
+
+  //   ],
+  //   images: [
+  //     {
+  //       imageUrl: `${}`,
+  //       imageTitle: "Memory game desktop view screenshot"
+  //     }
+  //   ]
+  // },
   {
-    name: "Portfolio",
+    name: "Github user search app",
     description: [
-      "This project was created to display my projects and show my skills.",
-      "The navigation is created with react-scroll, the form validation with react-hook-form and to send the message I used EmailJS. All the styling was done with Bootstrap 5 and SCSS."
+      "This is a frontendmentor.io challenge, the app let's you look up github users and shows some information about the user. It also has a light/dark-mode toggle.",
+      "In this project I worked with React Hooks, Axios for the API call, and CSS variables. I also used a mobile first approach.",
+      "To search and display user information, I used the Github api (https://docs.github.com/en/rest/reference/users#get-a-user).",
+      "The app is fully responsive for mobile, tablet and desktop. This was mainly done with flexbox and media queries."
     ],
     images: [
-      { 
-        imageUrl: `${ImagePortfolioHome}`, 
-        imageTitle: "Portfolio Home page",
-      },
-      { 
-        imageUrl: `${ImagePortfolioSkills}`, 
-        imageTitle: "Portfolio Skills page",
-      },
-      { 
-        imageUrl: `${ImagePortfolioProjects}`, 
-        imageTitle: "Portfolio projects page",
-      },
-      { 
-        imageUrl: `${ImagePortfolioContact}`, 
-        imageTitle: "Portfolio contact page",
-      },
+      {
+        imageUrl: `${ImageGithubUserSearchAppDesktop}`,
+        imageTitle: "Desktop view application"
+      }
     ],
-    languages: ["HTML", "CSS", "Bootstrap", "ReactJs"],
-    github: "https://github.com/Yasmine10/portfolio",
-    liveLink: "https://yasminedewolf.be",
+    languages: ["HTML", "CSS", "Javascript", "ReactJS", "SCSS"],
+    github: "https://github.com/Yasmine10/github-user-search-app",
+    liveLink: "https://github-user-search-app-10.herokuapp.com/"
+  },
+  {
+    name: "Sunnyside agency landing page",
+    description: [
+      "This is a frontendmentor.io challenge. I created this landing page based on a mobile and desktop mockup that was given with the challenge",
+      "The site is responsive for mobile and desktop. I mainly used flexbox and some media queries to achieve this.",
+    ],
+    images: [
+      {
+        imageUrl: `${ImageSunnysideAgencyLandingPageDesktop}`,
+        imageTitle: "Desktop view landing page"
+      }
+    ],
+    languages: ["HTML", "CSS", "Javascript", "ReactJS", "SCSS"],
+    github: "https://github.com/Yasmine10/sunnyside-agency-landing-page",
+    liveLink: "https://sunnyside-challenge.herokuapp.com/",
   },
   {
     name: "Paramotor terrain notification applications (Internship projects)",
@@ -58,7 +75,7 @@ const projects = [
       "Renewing and upgrading of 2 existing web applications: paramotor terrain registration for clients and an internal business app to view registrations and aprove them",
       "I mainly worked on the frontend side of both applications, with Angular 11 and TypeScript, Bootstrap and PrimeNG",
       "Implementation of JWT on the frontend side to make logging in with eID possible",
-      "Because this is a federal government project that isn't placed online yet, I am not able to show a live demo or a Github project link"
+      "Because this is a federal government project that isn't placed online yet, I am not able to show a live demo or a Github project link. (But you can view the slides that I provided.)"
     ],
     images: [
       { 
@@ -135,9 +152,25 @@ const projects = [
       },
       
     ],
-    languages: ["HTML", "CSS", "Angular CLI", "TypeScript", "Bootstrap", "PrimeNG"],
+    languages: ["HTML", "SCSS", "Angular CLI", "TypeScript", "Bootstrap", "PrimeNG"],
     github: "",
     liveLink: "",
+  },
+  {
+    name: "Portfolio",
+    description: [
+      "This project was created to display my projects and show my skills.",
+      "The navigation is created with react-scroll, the form validation with react-hook-form and to send a message with the contact form I used EmailJS. All the styling was done with Bootstrap 5 and SCSS."
+    ],
+    images: [
+      { 
+        imageUrl: `${ImagePortfolioDesktop}`, 
+        imageTitle: "Portfolio Desktop",
+      }
+    ],
+    languages: ["HTML", "SCSS", "Bootstrap", "ReactJs"],
+    github: "https://github.com/Yasmine10/portfolio",
+    liveLink: "https://yasminedewolf.be",
   },
 ];
 

@@ -13,8 +13,8 @@ function ProjectCard(props) {
   ));
 
   const descriptionItems = props.project.description.map((alinea, index) => (
-    <li key={index} className="">
-      <span>{alinea}</span>
+    <li key={index} className="description-alineas">
+      <p>{alinea}</p>
     </li>
   ));
 
@@ -27,12 +27,8 @@ function ProjectCard(props) {
         // className="flex-shrink-md-0 me-lg-5"
         className="col-lg-6 col-12 me-lg-5"
       >
-        {/* <img
-          src={props.project.imageUrl}
-          alt={props.project.imageAlt}
-          className="project-image"
-        /> */}
-        <Slider images={props.project.images} />
+        {props.project.images.length > 1 ? <Slider images={props.project.images} /> : <img src={props.project.images[0].imageUrl} alt={props.project.images[0].imageAlt} className="project-image" />}
+        
       </div>
       <div
         // className="flex-grow-md-1"

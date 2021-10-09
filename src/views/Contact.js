@@ -55,7 +55,6 @@ function Contact() {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm();
 
   const onSubmit = (data, e) => {
@@ -72,8 +71,6 @@ function Contact() {
         return setShowErrorAlert(true);
       }
     );
-
-    reset(register);
   };
 
   return (

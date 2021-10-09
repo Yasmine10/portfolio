@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap');
 @import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // font-family: 'Fira Code', monospace;
+  // font-weight: 500;
+}
 
 //----------   MAIN STYLES   ----------//
 
@@ -137,7 +149,7 @@
 //----------   SKILLS   ----------//
 
 #skills {
-  background-color: $primary-color;
+  // background-color: $primary-color;
   color: $background-color;
 }
 
@@ -153,7 +165,7 @@
 
 #project-card {
   .project-image {
-    outline: 0.1rem solid $primary-color;
+    // outline: 0.1rem solid $primary-color;
     width: 100%;
     margin-bottom: 1rem !important;
 
@@ -228,7 +240,7 @@
   }
 
   .note-text {
-    color: $secondary-color;
+    color: $note-color;
   }
 }
 

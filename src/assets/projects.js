@@ -20,21 +20,31 @@ import ImageFODStageBusinessList from "../assets/images/FOD_stage/FOD_stage_busi
 
 import ImagePortfolioDesktop from "../assets/images/portfolio/portfolio_desktop.png";
 import ImageSunnysideAgencyLandingPageDesktop from "../assets/images/sunnyside_agency_landing_page/sunnyside_agency_landing_page_desktop.png";
-import ImageGithubUserSearchAppDesktop from "../assets/images/github_user_search_app/github_user_search_app_desktop.png";
+import ImageGithubUserSearchAppDesktop from "../assets/images/github_user_search_app_desktop.png";
+
+import ImageMemoryGameDesktop from "../assets/images/memory-game-solution.png";
 
 const projects = [
-  // {
-  //   name: "Memory game",
-  //   description: [
-
-  //   ],
-  //   images: [
-  //     {
-  //       imageUrl: `${}`,
-  //       imageTitle: "Memory game desktop view screenshot"
-  //     }
-  //   ]
-  // },
+  {
+    name: "Memory game",
+    description: [
+      "This is a frontendmentor.io challenge. It's a simple memory game with some options that you can select before starting the game.",
+      "When the user finishes the game it shows how long it took to finish the game and how many moves they made.",
+      "For this project I worked with vuex to be able to easily access the state variables that I need in each component.",
+      "The navigation to go from the menu to the game itself, is done with Vue Router.",
+      "The game is fully responsive, made with flexbox, css grid and media queries.",
+    ],
+    images: [
+      {
+        imageUrl: `${ImageMemoryGameDesktop}`,
+        imageTitle: "Memory game desktop view screenshot"
+      }
+    ],
+    languages: ["HTML", "SCSS", "JavaScript", "VueJS", "Vuex"],
+    github: "https://github.com/Yasmine10/memory-game",
+    liveLink: "https://memory-game-yasmine.vercel.app/",
+    loadingTime: false
+  },
   {
     name: "Github user search app",
     description: [
@@ -49,7 +59,7 @@ const projects = [
         imageTitle: "Desktop view application"
       }
     ],
-    languages: ["HTML", "CSS", "Javascript", "ReactJS", "SCSS"],
+    languages: ["HTML", "SCSS", "JavaScript", "ReactJS"],
     github: "https://github.com/Yasmine10/github-user-search-app",
     liveLink: "https://github-user-search-app-10.herokuapp.com/",
     loadingTime: true
@@ -66,7 +76,7 @@ const projects = [
         imageTitle: "Desktop view landing page"
       }
     ],
-    languages: ["HTML", "CSS", "Javascript", "ReactJS", "SCSS"],
+    languages: ["HTML", "CSS", "JavaScript", "ReactJS", "SCSS"],
     github: "https://github.com/Yasmine10/sunnyside-agency-landing-page",
     liveLink: "https://sunnyside-challenge.herokuapp.com/",
     loadingTime: true
@@ -171,7 +181,7 @@ const projects = [
         imageTitle: "Portfolio Desktop",
       }
     ],
-    languages: ["HTML", "SCSS", "Bootstrap", "ReactJs"],
+    languages: ["HTML", "SCSS", "JavaScript", "ReactJs", "Bootstrap"],
     github: "https://github.com/Yasmine10/portfolio",
     liveLink: "https://yasminedewolf.be",
     loadingTime: false

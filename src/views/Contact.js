@@ -58,7 +58,7 @@ function Contact() {
     reset,
   } = useForm();
 
-  const onSubmit = (e) => {
+  const onSubmit = (data, e) => {
     e.preventDefault();
 
     setShowSuccessAlert(false);

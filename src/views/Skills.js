@@ -8,6 +8,7 @@ import {
   faCss3Alt,
   faJava,
   faJs,
+  faReact,
 } from "@fortawesome/free-brands-svg-icons";
 
 class Skills extends Component {
@@ -38,6 +39,10 @@ class Skills extends Component {
             <div className="text-center px-4">
               <FontAwesomeIcon icon={faVuejs} size="3x"></FontAwesomeIcon>
               <p className="mt-2">VueJs</p>
+            </div>
+            <div className="text-center px-4">
+              <FontAwesomeIcon icon={faReact} size="3x"></FontAwesomeIcon>
+              <p className="mt-2">ReactJS</p>
             </div>
             <div className="text-center px-4">
               <FontAwesomeIcon icon={faAngular} size="3x"></FontAwesomeIcon>

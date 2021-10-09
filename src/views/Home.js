@@ -11,10 +11,8 @@ class Home extends Component {
             <h4 className="fw-normal">Hi, I'm</h4>
             <h1 className="name mb-4">Yasmine De Wolf</h1>
             <p className="fw-light">
-              I'm a <strong className="text-pink">fullstack developer</strong>{" "}
-              with a passion for frontend development and creating responsive
-              and ux friendly websites.
-            </p>
+              I'm a <strong className="text-pink">fullstack developer</strong> with a passion for frontend development and creating responsive and UX friendly websites.</p>
+            <p>I'm currently learning ReactJS and started using the mobile first workflow to create better responsive websites.</p>
             <a
               href={Resume}
               target="_blank"

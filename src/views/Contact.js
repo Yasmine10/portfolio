@@ -25,10 +25,7 @@ function Contact() {
     return (
       <div className="mt-4">
         <p>
-          <strong>
-            Thank you for your message! I will get back to you as soon as
-            possible!
-          </strong>
+          <strong>Thank you for your message!</strong>
         </p>
       </div>
     );
@@ -62,17 +59,15 @@ function Contact() {
 
   const onSubmit = (data, e) => {
     e.preventDefault();
-    console.log(register);
+
+    setShowSuccessAlert(false);
+    setShowErrorAlert(false);
 
     emailjs.sendForm(serviceId, templateId, e.target, userId).then(
       (result) => {
-        console.log(result.text);
-        e.target.reset();
         return setShowSuccessAlert(true);
       },
       (error) => {
-        console.log(error.text);
-        e.target.reset();
         return setShowErrorAlert(true);
       }
     );
